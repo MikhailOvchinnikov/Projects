@@ -3,9 +3,11 @@
 
 #include <iostream>
 #include <boost/align.hpp>
+#include <clocale>
 
 int main()
 {   
+    setlocale(LC_CTYPE, "rus");
     std::cout << "pass";
     std::cout << "Hello World, I'm Mikhail, I'm nineteen!\n";
     std::cout << "Today, I talk to you about...";
