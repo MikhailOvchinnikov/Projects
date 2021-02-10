@@ -8,6 +8,8 @@ int main()
 {   
     std::cout << "pass";
     std::cout << "Hello World, I'm Mikhail, I'm nineteen!\n";
+    std::cout << "Today, I talk to you about...";
+    std::cout << "Goodby";
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
