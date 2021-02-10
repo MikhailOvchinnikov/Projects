@@ -20,6 +20,7 @@ int main()
     std::cout << "The end №8(second attempt";
     //Rebase добавляет изменения с основной ветки в новую, а потом к этим изменениям добавляет изменения в новой ветке,
     //Merge просто добавляет коммиты к текущему моменту изменений
+    std::cout << "The end №9(another change";
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
