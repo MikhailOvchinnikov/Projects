@@ -5,7 +5,8 @@
 #include <boost/align.hpp>
 
 int main()
-{
+{   
+    std::cout << "pass";
     std::cout << "Hello World, I'm Mikhail, I'm nineteen!\n";
 }
 
