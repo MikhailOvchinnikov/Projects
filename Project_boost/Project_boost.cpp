@@ -17,6 +17,7 @@ int main()
     std::cout << "The end ¹5(second attempt";
     std::cout << "The end ¹6(second attempt";
     std::cout << "The end ¹7(second attempt";
+    std::cout << "The end ¹8(second attempt";
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
