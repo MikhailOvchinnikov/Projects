@@ -11,6 +11,7 @@ int main()
     std::cout << "Today, I talk to you about...";
     std::cout << "Goodby";
     std::cout << "The end";
+    std::cout << "The end ¹3";
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
