@@ -49,32 +49,15 @@ public:
 
 
 int main()
-{   
-    setlocale(LC_CTYPE, "rus");
-    std::cout << "pass";
-    std::cout << "Hello World, I'm Mikhail, I'm nineteen!\n";
-    std::cout << "Today, I talk to you about...";
-    std::cout << "Goodby";
-    std::cout << "The end";
-    std::cout << "The end №3(second attempt";
-    std::cout << "The end №3(second attempt";
-    std::cout << "The end №4(second attempt";
-    std::cout << "The end №5(second attempt";
-    std::cout << "The end №6(second attempt";
-    std::cout << "The end №7(second attempt";
-    std::cout << "The end №8(second attempt";
-    //Rebase добавляет изменения с основной ветки в новую, а потом к этим изменениям добавляет изменения в новой ветке,
-    //Merge просто добавляет коммиты к текущему моменту изменений
-    std::cout << "The end №9(another change";
+{
+	std::shared_ptr<BankCell> ptr;
+	Human* hum1 = new Human("Anton", ptr);
+	hum1->setBankCell();
+	Human* hum2 = new Human("Anton", hum1->getBankCell());
+	delete hum1;
+	delete hum2;
+	Human* hum3 = new Human("Vasia", ptr);
+	hum3->setBankCell();
+	delete hum3;
+
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
