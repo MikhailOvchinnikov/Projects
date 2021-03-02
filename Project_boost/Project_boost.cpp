@@ -2,8 +2,51 @@
 //
 
 #include <iostream>
-#include <boost/align.hpp>
-#include <clocale>
+#include <string>
+#include <memory>
+
+class BankCell
+{
+public:
+	BankCell()
+	{
+		std::cout << "bank cell created" << std::endl;
+	}
+
+	~BankCell()
+	{
+		std::cout << "bank cell deleted" << std::endl;
+	}
+};
+
+class Human
+{
+	std::string h_name;
+	std::shared_ptr<BankCell> ptr;
+public:
+	Human(std::string name, std::shared_ptr<BankCell> bc): h_name(name)
+	{
+		ptr =  bc;
+		std::cout << h_name << " was born" << std::endl;
+	}
+
+	~Human()
+	{
+		std::cout << h_name << " died" << std::endl;
+	}
+
+	std::shared_ptr<BankCell> getBankCell()
+	{
+		return ptr;
+	}
+		
+	void setBankCell()
+	{
+		ptr = std::shared_ptr<BankCell>(new BankCell);
+	}
+};
+
+
 
 int main()
 {   
